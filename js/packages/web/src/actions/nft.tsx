@@ -201,7 +201,7 @@ export const mintNFT = async (
   const result: IArweaveResult = await (
     await fetch(
       // TODO: add CNAME
-      env.startsWith('mainnet-beta')
+      env.startsWith('devnet')
         ? 'https://us-central1-principal-lane-200702.cloudfunctions.net/uploadFileProd2'
         : 'https://us-central1-principal-lane-200702.cloudfunctions.net/uploadFile2',
       {
